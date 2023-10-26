@@ -100,12 +100,12 @@ if(event.key=='enter')
             </button>
           </div>
                 <div className='image-main'>
-            {weatherData!=null && weatherData.weather.map((condition) => (
-                      <img
-                        src={weatherBg[condition.main]}
-                        alt={condition.main}
+                {weatherData != null && weatherData.weather.length > 0 && (
+                  <img
+                        src={weatherBg[weatherData.weather[0].main]}
+                        alt={weatherData.weather[0].main}
                       />
-            ))}
+                  )}
             </div>
            </div>
         <div className='content-2'>

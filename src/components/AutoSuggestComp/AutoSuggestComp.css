@@ -18,7 +18,7 @@ input{
     border-radius: 20vh;
     color: black;
     background-color: azure;
-    //padding-left: 30vh;
+    
 }
 input ::placeholder{
     text-align: start;
